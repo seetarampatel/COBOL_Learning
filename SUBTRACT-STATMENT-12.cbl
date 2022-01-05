@@ -1,0 +1,20 @@
+       IDENTIFICATION DIVISION.
+       PROGRAM-ID. SUBTRACT-STATEMEN-LEARN.
+       ENVIRONMENT DIVISION.
+       DATA DIVISION.
+       WORKING-STORAGE SECTION.
+       01  A PIC 99 VALUE 89.
+       01  B PIC 99 VALUE 11.
+       01  C PIC 99 VALUE ZEROES.
+       01  M PIC 99 VALUE ZEROES.
+
+       PROCEDURE DIVISION.
+           SUBTRACT B FROM A.       *> A = A - B
+           SUBTRACT B FROM A GIVING C.
+           COMPUTE M = B - A.
+
+           DISPLAY "VALUE OF A IS: " A.
+           DISPLAY "VALUE OF C IS: " C.
+           DISPLAY "VALUE OF M IS: " M.
+
+           STOP RUN.
